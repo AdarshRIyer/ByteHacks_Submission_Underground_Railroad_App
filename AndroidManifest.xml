@@ -1,94 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.underground_railroad_app">
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
+    package="com.example.testplace">
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Underground Railroad App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".OwnerRegistration"
-            android:parentActivityName=".OwnerLogin" />
-        <activity android:name=".ConductorRegistration" android:parentActivityName=".ConductorLogin"/>
-        <activity android:name=".ContrabandRegistration" android:parentActivityName=".ContrabandLogin"/>
-        <activity
-            android:name=".MapToContras"
-            android:parentActivityName=".NextAssigment" />
-        <activity
-            android:name=".condDms"
-            android:parentActivityName=".NextAssigment" />
-        <activity android:name=".NextAssigment" />
-        <activity
-            android:name=".Group4Certificates"
-            android:parentActivityName=".NextAssigment" />
-        <activity
-            android:name=".Group3Certificates"
-            android:parentActivityName=".NextAssigment" />
-        <activity
-            android:name=".Group2Certificates"
-            android:parentActivityName=".NextAssigment" />
-        <activity
-            android:name=".Group1Certificates"
-            android:parentActivityName=".NextAssigment" />
-        <activity android:name=".ContrabandHomePage" />
-        <activity android:name=".OwnerHomePage" />
-        <activity
-            android:name=".ContraDms"
-            android:parentActivityName=".ContrabandHomePage" />
-        <activity
-            android:name=".MeetCond"
-            android:parentActivityName=".VirginiaMap" />
-        <activity
-            android:name=".owndms"
-            android:parentActivityName=".OwnerHomePage" />
-        <activity
-            android:name=".NorthCMap"
-            android:parentActivityName=".AskCoords" />
-        <activity
-            android:name=".SouthCMap"
-            android:parentActivityName=".AskCoords" />
-        <activity
-            android:name=".VirginiaMap"
-            android:parentActivityName=".AskCoords" />
-        <activity
-            android:name=".viewReserv4"
-            android:parentActivityName=".OwnerHomePage" />
-        <activity
-            android:name=".viewReserv3"
-            android:parentActivityName=".OwnerHomePage" />
-        <activity
-            android:name=".viewReserv2"
-            android:parentActivityName=".OwnerHomePage" />
-        <activity
-            android:name=".viewReserv"
-            android:parentActivityName=".OwnerHomePage" />
-        <activity
-            android:name=".AskCoords"
-            android:parentActivityName=".ContrabandHomePage" />
-        <activity
-            android:name=".AvailableSupplies"
-            android:parentActivityName=".OwnerHomePage" />
-        <activity
-            android:name=".OwnerLogin"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ConductorLogin"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ContrabandLogin"
-            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

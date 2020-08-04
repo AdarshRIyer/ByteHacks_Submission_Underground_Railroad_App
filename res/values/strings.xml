@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chat Application</string>
+    <string name="input_placeholder">Write a message</string>
+    <string name="placeholder_message">Placeholder message</string>
+    <string name="sample_other_person">Other person</string>
+    <string name="how_are_you_doing_sample">How are you doing?</string>
+</resources>
