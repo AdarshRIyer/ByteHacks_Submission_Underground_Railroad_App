@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskCoords">
+
+    <TextView
+        android:id="@+id/showLocation2"
+        android:layout_width="367dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text='Click "Find Location" to display current location here'
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetLocation2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGetLocation2"
+        android:layout_width="96dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="17dp"
+        android:text="Find Location"
+        app:layout_constraintBottom_toTopOf="@+id/button38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/textView82" />
+
+    <Button
+        android:id="@+id/button38"
+        android:layout_width="408dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="568dp"
+        android:onClick="LOGOUT"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="374dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Enter your current coordinates. A conductor will find you and lead you through back roads to your desired safe house"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal2"
+        android:layout_width="107dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="117dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="203dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Latitude:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="109dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Longitude:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="°W"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="181dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="°N"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal4" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal4"
+        android:layout_width="107dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="196dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:onClick="goToMap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="193dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="goToMap"
+        android:text="Proceed to Available Safe Houses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ErrCoords"
+        android:layout_width="353dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Error: The Coordinates Entered are not within the areas covered by this application"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+</android.support.constraint.ConstraintLayout>

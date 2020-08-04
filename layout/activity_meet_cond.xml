@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeetCond">
+
+    <Button
+        android:id="@+id/button45"
+        android:layout_width="408dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="568dp"
+        android:onClick="LOGOUT"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Your Conductor:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CondView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="            "
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="353dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Wait until your conductor reaches you. They know the back roads well, and will make sure that you are secure. If you hear people approaching, move as stealthily away as you can. Do not go with anyone unless they can tell you the code in your messages."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CondView" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="227dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="start|top"
+        android:hint="Enter names and ages of all people in your group"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <Button
+        android:id="@+id/button54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="GoHome"
+        android:text="Done/Home"
+        app:layout_constraintBottom_toTopOf="@+id/button45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

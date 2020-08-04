@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContraDms">
+
+    <EditText
+        android:id="@+id/condSendMsgs2"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Write a message"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button76"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_body13" />
+
+    <Button
+        android:id="@+id/button76"
+        android:layout_width="129dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="LOGOUT"
+        android:text="Logout"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <Button
+        android:id="@+id/button77"
+        android:layout_width="218dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="GoHome"
+        android:text="Done/Home"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="36dp"
+        android:background="@android:drawable/ic_menu_send"
+        android:backgroundTint="@android:color/black"
+        android:onClick="sendText"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message_body11"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="328dp"
+        android:background="@drawable/their_message_block"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="Hello"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message_body12"
+        android:layout_width="262dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/my_message_block"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="Thank you for the kind offer."
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message_body13"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/my_message_block"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="I will need food, water, and clothes"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message_body14"
+        android:layout_width="303dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/their_message_block"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="I am the owner of the safe house you are scheduled to arrive at. Please tell me what you may need."
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message_body15"
+        android:layout_width="271dp"
+        android:layout_height="83dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/their_message_block"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="I have available: food, drinking water, clothes, lanterns, and much more."
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

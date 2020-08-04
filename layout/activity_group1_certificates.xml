@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Group1Certificates">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="423dp"
+            android:layout_height="321dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/alabama0" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="416dp"
+            android:layout_height="319dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/alabama1" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="450dp"
+            android:layout_height="327dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:srcCompat="@drawable/alabama2" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="413dp"
+            android:layout_height="319dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:srcCompat="@drawable/alabama3" />
+
+        <Button
+            android:id="@+id/button61"
+            android:layout_width="223dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="GoHome"
+            android:text="Done/Home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button65"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+        <Button
+            android:id="@+id/button65"
+            android:layout_width="113dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="33dp"
+            android:onClick="LOGOUT"
+            android:text="Logout"
+            app:layout_constraintEnd_toStartOf="@+id/button61"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextAssigment">
+
+    <Button
+        android:id="@+id/button67"
+        android:layout_width="341dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:onClick="LOGOUT"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="177dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="HOME"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button59"
+        android:layout_width="278dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="67dp"
+        android:onClick="viewCerts"
+        android:text="View Certificates of Freedom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <Button
+        android:id="@+id/button72"
+        android:layout_width="158dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="67dp"
+        android:onClick="goToMapToContras"
+        android:text="View Map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <Button
+        android:id="@+id/button60"
+        android:layout_width="278dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="67dp"
+        android:onClick="goToCondMessages"
+        android:text="Go To Messages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="365dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Next Assignment: Pick up Contrabands at 80.657°W, 37.127°N"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+</android.support.constraint.ConstraintLayout>
