@@ -19,7 +19,7 @@ import com.scaledrone.lib.Scaledrone;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements RoomListener {
-    private String channelID = "GmNqa8hX57B6xTEs";
+    private String channelID = "/*MY_ID_CODE_HERE. I have an id code and it works using that, yet seeing as it is unrestricted, I am not publishing it to the world.*/";
     private String roomName = "observable-room";
     private EditText editText;
     private Scaledrone scaledrone;
